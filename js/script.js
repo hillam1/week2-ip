@@ -1,24 +1,23 @@
+function onSubmit() {
+    let sex = document.getElementById("sex").value;
+    let DD = parseInt(document.getElementById("day").value);
+    let MM = parseInt(document.getElementById("month").value);
+    let year = document.getElementById("year").value;
+    let YY = parseInt(year.slice(2, 4));
+    let CC = parseInt(year.slice(0, 2));
 
+    const male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
 
-    let sex = (document.getElementById("gender").value);
-    let day = parseInt.(document.getElementById("day").value);
-    let month = parseInt.(document.getElementById("month").value);
-    let year = parseInt.(document.getElementById("year").value);
-    let century =parseInt.(document.getElementById("century").value);
+    const female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]    
+
+    let day = dayIndex(CC, YY, MM, CC);
 }
-
-let dayOfBirth = function(century,year,month,day) {
-    return dayOfBirth =  ((( (century/4) -2*century-1) + ((5*year/4) ) + ((26*month+1)/10)) + day ) % 7).toFixed(0);
-}
-
-let male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
-let female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "ama"]
-
-
-    let name = "";
-    if (sex = "male")
-        for (let dayOfBirth= 0; dayOfBirth < male.length; i++) {
-            name += male[i] + "<br>";
-        
-        document.getElementById("output").innerHTML = "your name is" +nalet dayOfBirth = function(century,year,month,day) {
-            return dayOfBirth =  ((( (century/4) -2*century-1)
+function dayIndex(CC, MM, MM, DD) {
+    return ( ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7).toFixed(0);
+    if sex = "male" && for (let day = 0; day < male.length; day++) {
+        text += male[i] + "<br>";
+      }
+      
+    else && for (let day = 0; day < female.length; day++){
+        text +=female{i} +
+    }
