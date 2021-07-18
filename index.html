@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-    </head> 
-    <body>
-        <form>
-            <input type="radio" id="male" name="gender" value="MALE">
-            <label for="male">MALE</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">FEMALE</label><br><br>
-            <input type="date" id="birthday" name="birthday">
-            <label for="birthday">Birthday</label>
+<html lang="en">
 
+<head>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Find your Akan name here as per ghanian culture</h2>
+        <form> 
+        
+            <div class="form-group">
+                <label for="sex">sex</label>
+                <input type="text" placeholder="Enter gender" id="sex">
+            </div>
+            <div class="form-group">
+                <label for="date-of-birth">Date of Birth:</label>
+
+                <input type="number" class="form-control" placeholder="DDMMYYYY" id="birthday">
+
+            </div>
 
             
+            <button type="button" class="btn btn-primary" onclick="onSubmit()">Submit</button>
         </form>
-    </body>
-</html>
+        <p id="output"></p>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
